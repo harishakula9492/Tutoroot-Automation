@@ -70,5 +70,5 @@ public class CalendarPage extends BasePage {
 
     public boolean isLeaveDisplayed() {
         return driver.findElements(leaveLabel).size() > 0;
-    }
+     }
 }
