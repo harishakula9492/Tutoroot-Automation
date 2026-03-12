@@ -22,7 +22,7 @@ public class CalendarPage extends BasePage {
     // Calendar data
     private By calendarTitle = By.cssSelector(".fc-toolbar-title");
     private By sessions      = By.cssSelector(".fc-event");
-    private By leaveLabel    = By.xpath("//span[contains(text(),'On Leave')]");
+   // private By leaveLabel    = By.xpath("//span[contains(text(),'On Leave')]");
 
     public CalendarPage(WebDriver driver) {
         super(driver);
