@@ -68,7 +68,7 @@ public class CalendarPage extends BasePage {
         return driver.findElements(sessions);
     }
 
-    public boolean isLeaveDisplayed() {
+    public boolean isLeaveDisplayed()   {
         return driver.findElements(leaveLabel).size() > 0;
      }
 }
