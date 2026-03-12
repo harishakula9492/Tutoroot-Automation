@@ -1,0 +1,189 @@
+<html>
+<head>
+<title>TestNG:  Regression Login</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression Login</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Jan 07 14:50:23 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>90 seconds (90122 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.SelectGrade8CourseTest.verifyGrade8CourseSelection()'><b>verifyGrade8CourseSelection</b><br>Test class: tests.SelectGrade8CourseTest</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //h2[normalize-space()=&apos;Introduction to Force&apos;]/ancestor::div[contains(@class,&apos;cursor-pointer&apos;) or contains(@class,&apos;rounded&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HARISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52974}, goog:processID: 33840, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52974/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1311039e34c6a3863f7ee5faf1494c0a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at base.BasePage.waitForClickable(BasePage.java:37)
+	at base.BasePage.click(BasePage.java:57)
+	at pages.CoursesPage.selectlesson(CoursesPage.java:44)
+	at tests.SelectGrade8CourseTest.verifyGrade8CourseSelection(SelectGrade8CourseTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1104618827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1104618827'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //h2[normalize-space()=&apos;Introduction to Force&apos;]/ancestor::div[contains(@class,&apos;cursor-pointer&apos;) or contains(@class,&apos;rounded&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HARISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52974}, goog:processID: 33840, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52974/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1311039e34c6a3863f7ee5faf1494c0a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at base.BasePage.waitForClickable(BasePage.java:37)
+	at base.BasePage.click(BasePage.java:57)
+	at pages.CoursesPage.selectlesson(CoursesPage.java:44)
+	at tests.SelectGrade8CourseTest.verifyGrade8CourseSelection(SelectGrade8CourseTest.java:29)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at org.testng.TestRunner.privateRun(TestRunner.java:741)
+	at org.testng.TestRunner.run(TestRunner.java:616)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+</pre></div></td>
+<td>37</td>
+<td>tests.SelectGrade8CourseTest@36902638</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DashboardRegressionTest.verifyDashboardMenuClicks()'><b>verifyDashboardMenuClicks</b><br>Test class: tests.DashboardRegressionTest</td>
+<td></td>
+<td>39</td>
+<td>tests.DashboardRegressionTest@49ec71f8</td></tr>
+<tr>
+<td title='tests.CalendarTest.verifyNextAndPreviousNavigation()'><b>verifyNextAndPreviousNavigation</b><br>Test class: tests.CalendarTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CalendarTest@1d2adfbe</td></tr>
+<tr>
+<td title='tests.CalendarTest.verifyMonthWeekDayViewSwitch()'><b>verifyMonthWeekDayViewSwitch</b><br>Test class: tests.CalendarTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CalendarTest@1d2adfbe</td></tr>
+<tr>
+<td title='tests.LoginTest.validLoginTest()'><b>validLoginTest</b><br>Test class: tests.LoginTest</td>
+<td></td>
+<td>0</td>
+<td>tests.LoginTest@7e07db1f</td></tr>
+<tr>
+<td title='tests.CalendarTest.verifyLeaveDisplay()'><b>verifyLeaveDisplay</b><br>Test class: tests.CalendarTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CalendarTest@1d2adfbe</td></tr>
+<tr>
+<td title='tests.SelectGrade8CourseTest.Courseclick()'><b>Courseclick</b><br>Test class: tests.SelectGrade8CourseTest</td>
+<td></td>
+<td>3</td>
+<td>tests.SelectGrade8CourseTest@36902638</td></tr>
+<tr>
+<td title='tests.CalendarTest.verifyCalendarLoads()'><b>verifyCalendarLoads</b><br>Test class: tests.CalendarTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CalendarTest@1d2adfbe</td></tr>
+<tr>
+<td title='tests.CalendarTest.verifyTodayButton()'><b>verifyTodayButton</b><br>Test class: tests.CalendarTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CalendarTest@1d2adfbe</td></tr>
+<tr>
+<td title='tests.CalendarTest.verifySessionsDisplayed()'><b>verifySessionsDisplayed</b><br>Test class: tests.CalendarTest</td>
+<td></td>
+<td>0</td>
+<td>tests.CalendarTest@1d2adfbe</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">Automation Suite</th></tr>
+<tr><td><a href="#t0">Regression Login</a></td><td class="num">9</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">90,122</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Automation Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Regression Login &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">tests.SelectGrade8CourseTest</td><td><a href="#m0">verifyGrade8CourseSelection</a></td><td rowspan="1">1767777676755</td><td rowspan="1">37093</td></tr><tr><th colspan="4">Regression Login &#8212; passed</th></tr><tr class="passedeven"><td rowspan="6">tests.CalendarTest</td><td><a href="#m1">verifyCalendarLoads</a></td><td rowspan="1">1767777672386</td><td rowspan="1">46</td></tr><tr class="passedeven"><td><a href="#m2">verifyLeaveDisplay</a></td><td rowspan="1">1767777673596</td><td rowspan="1">4</td></tr><tr class="passedeven"><td><a href="#m3">verifyMonthWeekDayViewSwitch</a></td><td rowspan="1">1767777672436</td><td rowspan="1">419</td></tr><tr class="passedeven"><td><a href="#m4">verifyNextAndPreviousNavigation</a></td><td rowspan="1">1767777673206</td><td rowspan="1">343</td></tr><tr class="passedeven"><td><a href="#m5">verifySessionsDisplayed</a></td><td rowspan="1">1767777673569</td><td rowspan="1">16</td></tr><tr class="passedeven"><td><a href="#m6">verifyTodayButton</a></td><td rowspan="1">1767777672857</td><td rowspan="1">347</td></tr><tr class="passedodd"><td rowspan="1">tests.DashboardRegressionTest</td><td><a href="#m7">verifyDashboardMenuClicks</a></td><td rowspan="1">1767777632857</td><td rowspan="1">39526</td></tr><tr class="passedeven"><td rowspan="1">tests.LoginTest</td><td><a href="#m8">validLoginTest</a></td><td rowspan="1">1767777631865</td><td rowspan="1">978</td></tr><tr class="passedodd"><td rowspan="1">tests.SelectGrade8CourseTest</td><td><a href="#m9">Courseclick</a></td><td rowspan="1">1767777673616</td><td rowspan="1">3139</td></tr></tbody>
+</table>
+<h2>Regression Login</h2><h3 id="m0">tests.SelectGrade8CourseTest#verifyGrade8CourseSelection</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: By.xpath: //h2[normalize-space()=&apos;Introduction to Force&apos;]/ancestor::div[contains(@class,&apos;cursor-pointer&apos;) or contains(@class,&apos;rounded&apos;)] (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.39.0&apos;, revision: &apos;126f156aee&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;25.0.1&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 143.0.7499.170, chrome: {chromedriverVersion: 143.0.7499.192 (be2c1f4fd45..., userDataDir: C:\Users\HARISH~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52974}, goog:processID: 33840, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52974/devtoo..., se:cdpVersion: 143.0.7499.170, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 1311039e34c6a3863f7ee5faf1494c0a
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at base.BasePage.waitForClickable(BasePage.java:37)
+	at base.BasePage.click(BasePage.java:57)
+	at pages.CoursesPage.selectlesson(CoursesPage.java:44)
+	at tests.SelectGrade8CourseTest.verifyGrade8CourseSelection(SelectGrade8CourseTest.java:29)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1090)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:614)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+... Removed 15 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">tests.CalendarTest#verifyCalendarLoads</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">tests.CalendarTest#verifyLeaveDisplay</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">tests.CalendarTest#verifyMonthWeekDayViewSwitch</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">tests.CalendarTest#verifyNextAndPreviousNavigation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">tests.CalendarTest#verifySessionsDisplayed</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">tests.CalendarTest#verifyTodayButton</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">tests.DashboardRegressionTest#verifyDashboardMenuClicks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">tests.LoginTest#validLoginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">tests.SelectGrade8CourseTest#Courseclick</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
